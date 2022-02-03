@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  text-decoration: none;
+  list-style: none;
+}
+
+a,
+a:visited,
+a:link,
+a:hover {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F2F2F2;
+}
+
+h1 {
+  color: #373737;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 40rem) {
+  h1 {
+    font-size: 1.9rem;
+  }
+}
+
+.main-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+@media (max-width: 62rem) {
+  .main-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+.top-text {
+  text-align: center;
+  margin-top: 0.9375rem;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 40rem) {
+  .top-text {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 7rem;
+  width: 11rem;
+  border-radius: 1.5625rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #FDFDFD;
+}
+
+@media (max-width: 40rem) {
+  .card {
+    height: 6rem;
+    width: 10rem;
+  }
+}
+
+.card__title {
+  color: #373737;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding-bottom: 0.8125rem;
+}
+
+@media (max-width: 40rem) {
+  .card__title {
+    font-size: 1.1rem;
+  }
+}
+
+.card__value {
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.875rem;
+}
+
+@media (max-width: 62rem) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 1.5rem;
+  }
+}
+
+.textarea {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+  height: 85%;
+  width: 80%;
+  resize: none;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #FDFDFD;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.29);
+  border-radius: 16px;
+  padding: 2.5625rem 3.5625rem 0 3.5625rem;
+}
+
+.textarea::-webkit-input-placeholder {
+  font-size: 1.25rem;
+}
+
+.textarea:-ms-input-placeholder {
+  font-size: 1.25rem;
+}
+
+.textarea::-ms-input-placeholder {
+  font-size: 1.25rem;
+}
+
+.textarea::placeholder {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 40rem) {
+  .textarea::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .textarea {
+    max-width: 60%;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  .textarea {
+    font-size: 1rem;
+    height: 20rem;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

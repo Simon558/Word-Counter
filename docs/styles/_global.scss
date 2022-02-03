@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    text-decoration: none;
+    list-style: none;
+}
+
+a,
+a:visited,
+a:link,
+a:hover{
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $bg;
+}
+
+h1{
+    color: $primary;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2rem;
+
+    @include breakpointMax(sm){
+        font-size: 1.9rem;
+    }
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 2rem;
+
+    @include breakpointMax(md){
+        grid-template-columns: 1fr;
+    }
+}
+
+.top-text{
+    text-align: center;
+    margin-top: 0.9375rem;
+    margin-bottom: 4rem;
+
+    @include breakpointMax(sm){
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    }
+}

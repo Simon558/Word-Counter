@@ -1,0 +1,8 @@
+// 600px, 992px
+$breakpoints: ("sm": "40rem", "md": "62rem");
+
+@mixin breakpointMax($screen-size){
+  @media (max-width: map-get($breakpoints, $screen-size)){
+    @content;
+  }
+}
