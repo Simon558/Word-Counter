@@ -101,6 +101,7 @@ h1 {
   font-family: 'Open Sans', sans-serif;
   height: 85%;
   width: 80%;
+  resize: none;
   -ms-grid-column-align: center;
       justify-self: center;
   background-color: #FDFDFD;
@@ -124,5 +125,35 @@ h1 {
 
 .textarea::placeholder {
   font-size: 1.25rem;
+}
+
+@media (max-width: 36rem) {
+  .textarea::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  .textarea::placeholder {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 62rem) {
+  .textarea {
+    max-width: 60%;
+    height: 20rem;
+  }
+}
+
+@media (max-width: 36rem) {
+  .textarea {
+    font-size: 1rem;
+    height: 20rem;
+    padding: 1.2rem 1.2rem 0 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
